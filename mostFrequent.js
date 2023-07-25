@@ -3,7 +3,7 @@ const mostFrequent = arr => {
   for (const item of arr) {
     count[item] = count[item] ? count[item] + 1 : 1;
   }
-  let mostFrequent = count[0];
+  let mostFrequent = arr[0];
   let maxCount = 1;
   for (const item in count) {
     if (count[item] > maxCount) {
